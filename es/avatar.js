@@ -242,6 +242,7 @@ export default function createAvatarComponent(_ref) {
           width: size.str,
           height: size.str,
           style: imageStyle,
+          draggable: false,
           src: this.state.src,
           alt: alt || name || value,
           onError: internal && internal.fetch
