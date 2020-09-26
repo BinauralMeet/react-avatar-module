@@ -227,7 +227,6 @@ export default function createAvatarComponent(_ref) {
             round = _this$props2.round,
             unstyled = _this$props2.unstyled,
             alt = _this$props2.alt,
-            title = _this$props2.title,
             name = _this$props2.name,
             value = _this$props2.value;
         var internal = this.state.internal;
@@ -245,7 +244,6 @@ export default function createAvatarComponent(_ref) {
           style: imageStyle,
           src: this.state.src,
           alt: alt || name || value,
-          title: title || name || value,
           onError: internal && internal.fetch
         });
       }
@@ -256,7 +254,6 @@ export default function createAvatarComponent(_ref) {
             className = _this$props3.className,
             round = _this$props3.round,
             unstyled = _this$props3.unstyled,
-            title = _this$props3.title,
             name = _this$props3.name,
             value = _this$props3.value;
         var size = parseSize(this.props.size);
@@ -288,7 +285,6 @@ export default function createAvatarComponent(_ref) {
         return /*#__PURE__*/React.createElement("div", {
           className: className + ' sb-avatar__text',
           style: initialsStyle,
-          title: title || name || value
         }, /*#__PURE__*/React.createElement("div", {
           style: tableStyle
         }, /*#__PURE__*/React.createElement("span", {
@@ -343,7 +339,6 @@ export default function createAvatarComponent(_ref) {
 
   _defineProperty(Avatar, "propTypes", _objectSpread(_objectSpread({}, sourcePropTypes), {}, {
     alt: PropTypes.string,
-    title: PropTypes.string,
     className: PropTypes.string,
     fgColor: PropTypes.string,
     color: PropTypes.string,
